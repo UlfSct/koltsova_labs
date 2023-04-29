@@ -86,6 +86,16 @@ int main()
             n++;
         } 
         while (norm > eps);
+
+        // выводим результаты
+        for (int j = 0; j <= N[i]; j++)
+        {
+            if (i == 0 || (i == 1 && (j == 0 || j % 10 == 1)))
+            {
+                fout << std::setw(10) << u_prev[j] << " ";
+            }
+        }
+        fout << "\n";
     }
 
 
